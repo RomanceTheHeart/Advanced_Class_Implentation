@@ -26,7 +26,7 @@
   <ItemGroup>
     <ClInclude Include="Header_Files\Account.h" />
     <ClInclude Include="Header_Files\SavingsAccount.h" />
-    <ClInclude Include="Student.h" />
+    <ClInclude Include="Header_Files\Student.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

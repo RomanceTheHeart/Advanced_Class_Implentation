@@ -1,19 +1,21 @@
 #include <iostream>
-#include "Header_Files/Account.h"
+
+#include <cstdio>
+#include <cstdlib>
+#include <cstringt.h>
+#include "Header_Files/Student.h"
 
 
 using namespace std;
 
 int main()
 {
+string Name_1{"none"};
+int Age{0};
+int RollNumber{0};
 
-    Account myaccount;
 
-    myaccount.Deposit(200.0);
-    
-    cout <<"What WHat!";
-    cout << endl; 
-
+Student Student_1;
 
    system("pause");
 

@@ -32,7 +32,7 @@
     <ClInclude Include="Header_Files\SavingsAccount.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Student.h">
+    <ClInclude Include="Header_Files\Student.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
