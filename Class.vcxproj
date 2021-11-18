@@ -21,10 +21,12 @@
   <ItemGroup>
     <ClCompile Include="Account.cpp" />
     <ClCompile Include="Basic_Inheritance_Main.cpp" />
+    <ClCompile Include="Student.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header_Files\Account.h" />
     <ClInclude Include="Header_Files\SavingsAccount.h" />
+    <ClInclude Include="Student.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
