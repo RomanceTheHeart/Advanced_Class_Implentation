@@ -5,7 +5,7 @@
 #include <cstdlib>
 #include <cstring>
 
-using namespace std; 
+using namespace std;
 class Student
 {
 
@@ -15,32 +15,34 @@ class Student
 
 
 	//student variables:
-
-
+	int Age{ 0 };
+	string Name{"No name associated with this student"};
+	int rollnumber = studentcount;
 
 public:
 
-
-	int Age{ 0 };
-	string Name; 
-	int rollnumber{0};
+ static int studentcount;
+ static int StudentCount(){cout << studentcount; return studentcount; }
 
 	//constructor: (how is this object instanced)
-	Student()=default;
-	Student(string name, int roll) { name = Name; roll = rollnumber; }
-	Student(string name, int age, int roll) { name = Name; age = Age; roll = rollnumber; }
-	
-
-
-
+	inline Student(){string name=GetName(); studentcount++;}
+	inline  Student(string name, int roll) : Name(name), rollnumber(roll) {studentcount++;}
+	inline  Student(string name, int age, int roll) :Name(name), Age(age), rollnumber(roll) {studentcount++; }
 
 
 	//student methods:
-	void DisplayInfo();
+	void DisplayInfo()
+	{
+		cout << GetName() << endl;
+		cout << GetAge() << endl;
+		cout << GetRollNum() << endl;
+	}
+
 
 	//good old getters and setters.
+	string GetName() { return Name; }
 	void SetAge(int a) { Age = a; }
-
+	int GetRollNum() { return rollnumber; }
 	int GetAge() { return Age; }
 
 
@@ -50,3 +52,5 @@ public:
 
 
 };
+
+int Student::studentcount{0};

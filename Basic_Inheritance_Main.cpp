@@ -1,8 +1,4 @@
 #include <iostream>
-
-#include <cstdio>
-#include <cstdlib>
-#include <cstringt.h>
 #include "Header_Files/Student.h"
 
 
@@ -10,14 +6,29 @@ using namespace std;
 
 int main()
 {
-string Name_1{"none"};
-int Age{0};
-int RollNumber{0};
+	string Name_1{ "none" };
+	int Age{ 0 };
+	int RollNumber{0};
+
+	Student Student_1(Name_1, Age, RollNumber);
+	Student Student_2;
+	Student Student_3;
 
 
-Student Student_1;
+	cout << "\nStudents: \n";
 
-   system("pause");
+	Student_1.DisplayInfo();
+	cout << endl;
+	Student_2.DisplayInfo();
+	cout << endl;
+	Student_3.DisplayInfo();
+	cout << endl;
+	cout << "Number of Students Enrolled: "; Student::StudentCount();
+	cout << endl;
+	cout << endl;
 
-    return 0;
+	system("pause");
+
+
+	return 0;
 }
