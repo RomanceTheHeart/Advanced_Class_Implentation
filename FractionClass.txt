@@ -1,0 +1,35 @@
+class Fraction
+{
+private:
+int numerator;
+int denominator; 
+public:
+Fraction(int numerator, int denominator)
+{
+	this->numerator = numerator; // use of this keyword is mandatory.
+	this->denominator = denominator;
+cout << numberator <<"/" << denominator
+}
+
+void add(Fraction f2)//take the whole class as an input.
+{
+
+//take this class's denominator, multiply it with the other
+class's denominator and store it in a variable.
+
+ int lcm = this->denominator * f2.denominator; // optional use of the keyword this.
+ int x = 1cm/this->denominator; 
+ int num = x*numerator + y* f2.numerator; 
+
+this->numerator = num;
+this denominator = 1 cm;
+
+
+}
+
+};
+
+
+--------Main-------------
+#include<iostream
+using namespace std; 

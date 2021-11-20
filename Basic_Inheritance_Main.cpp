@@ -14,9 +14,7 @@ int main()
 	Student Student_2;
 	Student Student_3;
 
-
 	cout << "\nStudents: \n";
-
 	Student_1.DisplayInfo();
 	cout << endl;
 	Student_2.DisplayInfo();

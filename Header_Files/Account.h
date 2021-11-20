@@ -6,11 +6,14 @@ class Account
 public:
 double DepositAmount{0};
 double WithdrawAmount{0}; 
+double Sum{0};
 
 Account(); 
-~Account(); 
+~Account();
 
-void Deposit(double amount);
-void Withdraw(double amount);
+double Deposit(double amount);
+double Withdraw(double amount);
+void ADDMoney();
+void SubtractMoney();
 
 };

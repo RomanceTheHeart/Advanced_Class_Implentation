@@ -4,24 +4,25 @@
 
 Account::Account()
 {
-WithdrawAmount=0; 
-DepositAmount= 0;
+
 }
 Account::~Account()
 {
 
 }
 
-void Account::Deposit(double amount)
+double Account::Deposit(double amount)
 {
+
      
     std::cout << "Account deposit called with this amount: " << amount << std::endl;  
+    return Sum;
 }
 
-void Account::Withdraw(double amount)
+double Account::Withdraw(double amount)
 {
 
     
     std::cout << "Account withdraw called with " << amount << std::endl;;
-
+    return Sum; 
 }
