@@ -1,0 +1,44 @@
+This session takes a look at deep and shallow copies.
+the video shows a student class with a character called "name"
+
+class Student
+
+{
+int age;
+char *name;
+
+public:
+
+
+//example of built-in constructor.
+Student(Student const &s) // create a constant refference to avoid calling the copy constructor.
+{ 
+this->age = s.age;
+this->name = name;
+}
+
+
+//example of deep copy.
+Student(int age, char*name)
+{this->age = age;
+
+this->name = new char[(strlen(name) +1];  // Deep copy;
+strcpy(this->name,name);
+}
+
+
+void display()
+{
+cout << name << " " << age << endl; 
+
+}
+
+
+built-in copy constructor always makes shallow copy.
+create your own copy constructor to avoid this.
+
+// make a new array, then copy the contents of the array into the new array.
+
+
+
+};

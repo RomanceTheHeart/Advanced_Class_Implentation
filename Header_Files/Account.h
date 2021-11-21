@@ -3,11 +3,15 @@
 
 class Account 
 {
-public:
-double DepositAmount{0};
-double WithdrawAmount{0}; 
-double Sum{0};
 
+
+private:
+
+	double DepositAmount{ 0 };
+	double WithdrawAmount{ 0 };
+	double Sum{ 0 };
+
+public:
 Account(); 
 ~Account();
 

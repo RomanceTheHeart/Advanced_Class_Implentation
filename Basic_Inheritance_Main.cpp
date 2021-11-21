@@ -6,6 +6,7 @@ using namespace std;
 
 int main()
 {
+	
 	string Name_1{ "none" };
 	int Age{ 0 };
 	int RollNumber{0};
@@ -13,7 +14,7 @@ int main()
 	Student Student_1(Name_1, Age, RollNumber);
 	Student Student_2;
 	Student Student_3;
-
+	cin >> Student_1.GetName();
 	cout << "\nStudents: \n";
 	Student_1.DisplayInfo();
 	cout << endl;
@@ -25,8 +26,10 @@ int main()
 	cout << endl;
 	cout << endl;
 
+
 	system("pause");
-
-
 	return 0;
+
+
+
 }

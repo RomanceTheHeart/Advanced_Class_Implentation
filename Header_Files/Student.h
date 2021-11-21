@@ -39,8 +39,8 @@ Account account;
 
 
 	//good old getters and setters.
-	string GetName() { return Name; }
 	void SetAge(int a) { Age = a; }
+	string GetName() { return Name; }
 	int GetRollNum() { return rollnumber; }
 	int GetAge() { return Age; }
 

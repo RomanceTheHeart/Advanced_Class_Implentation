@@ -19,17 +19,60 @@ class's denominator and store it in a variable.
 
  int lcm = this->denominator * f2.denominator; // optional use of the keyword this.
  int x = 1cm/this->denominator; 
+ int y = 1cm/f2.denominator; //the other.
  int num = x*numerator + y* f2.numerator; 
 
-this->numerator = num;
-this denominator = 1 cm;
+this->numerator = num; //optional use of key word this.
+this->denominator = 1 cm; //optional use of key word this.
 
+
+
+}
+void Simplify()
+{
+//todo>
+// you can do this!!
 
 }
 
 };
 
-
+-------------------------
 --------Main-------------
+
 #include<iostream
 using namespace std; 
+
+
+int main()
+{
+Fraction f1(10,2);
+
+Fraction f2(4,10);
+
+add(f1,f2);
+
+Simplify();
+
+
+return 0;
+
+}
+------------------------------------------------------
+
+(idea)
+Student
+info:
+Name:
+Age:
+Rollnumber:
+Grades:
+Comments:
+-------------------------
+'			'
+'			'
+'			'	
+'			'
+-------------------------
+
+
