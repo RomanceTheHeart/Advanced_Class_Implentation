@@ -1,0 +1,18 @@
+Initialisation list:
+
+This method is used to inialiaze constant properties at the time of memory allocation.
+
+class Student
+{
+public:
+int age; 
+int const rollnumber; 
+
+//initalisation list
+Student(int r,int &a): rollnumber(r),age(a) //int &x = this->age; // "this" keyword is required.
+{
+
+}
+
+
+};

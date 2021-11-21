@@ -15,18 +15,18 @@ class Student
 	// These variables are private by default. 
 	//student variables:
 	int Age{ 0 };
-	string Name{"No name associated with this student"};
+	string Name{ "No name associated with this student" };
 	int rollnumber = studentcount;
 
 public:
-Account account;
- static int studentcount;
- static int StudentCount(){cout << studentcount; return studentcount; }
+	Account account;
+	static int studentcount;
+	static int StudentCount() { cout << studentcount; return studentcount; }
 
 	//constructor: (how is this object instanced)
-	inline Student(){string name = GetName(); studentcount++;}
-	inline  Student(string name, int roll) : Name(name), rollnumber(roll) {studentcount++;}
-	inline  Student(string name, int age, int roll) :Name(name), Age(age), rollnumber(roll) {studentcount++; }
+	inline Student() { string name = GetName(); studentcount++; }
+	inline  Student(string name, int roll) : Name(name), rollnumber(roll) { studentcount++; }
+	inline  Student(string name, int age, int roll) : Name(name), Age(age), rollnumber(roll) { studentcount++; }
 
 
 	//student methods:
@@ -52,4 +52,4 @@ Account account;
 
 };
 
-int Student::studentcount{0};
+int Student::studentcount{ 0 }; // static to determine number of students.

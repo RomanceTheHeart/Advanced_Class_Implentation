@@ -1,0 +1,104 @@
+Operator: overloading_1
+extending the functionality of the class. 
+
+---------------Fraction.cpp--------------------------------------
+ex:
+FractionAdd(Fraction const &f2)
+{
+
+int lcm = denonminator * f2.denominator;
+int x = lcm/ denominator; 
+int y = lcm/f2.denominator; 
+
+
+int number = x * numerator + (y * f2.numerator);
+
+
+//create a new fraction object and store the result.
+Fraction newfraction(num,lcm); 
+newfraction.Simplify(); 
+
+
+return newfraction;
+
+
+}
+
+-----------------------------------------------------------------
+the other approach:
+-----------------------------------------------------------------
+Fraction operator+(Fraction const &f2)
+{
+
+int lcm = denonminator * f2.denominator;
+int x = lcm/ denominator; 
+int y = lcm/f2.denominator; 
+
+
+int number = x * numerator + (y * f2.numerator);
+
+
+//create a new fraction object and store the result.
+Fraction newfraction(num,lcm); 
+newfraction.Simplify(); 
+
+
+return newfraction;
+
+
+}
+-----------------------------------------------------------------
+additionally you can compare two objects:
+-----------------------------------------------------------------
+bool operator==(Fraction const &f2)
+{return (numerator ==f2.numerator && denominator == f2.denominator);
+}
+
+-----------------------------------------------------------------
+
+More Overloading:
+operator overloading_2
+-----------------------------------------------------------------
+pre-increment
+void operator++() // this operation will update this class alone.
+{
+numerator = numerator+denominator;
+simplify(); 
+}
+
+----------------------to update other classes---------------------
+
+			"increment"
+
+Fraction &operator++() // pass by refference to avoid copy issues.
+{
+
+numerator = numerator + denominator; 
+Simplify(); 
+return *this; 
+
+}
+
+			"post increment"
+
+Fraction opperator++(int)
+{
+ Fraction fnew(numerator,denoninator); 
+ numerator = numerator + denominator;
+ fnew.Simplify();
+
+ return fnew; 
+
+}
+
+------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
