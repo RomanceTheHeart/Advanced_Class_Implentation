@@ -18,7 +18,7 @@
     <ClCompile Include="Account.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Basic_Inheritance_Main.cpp">
+    <ClCompile Include="Advanced_Class_implenetation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Student.cpp">
