@@ -1,0 +1,42 @@
+Dynamic Arrays:
+build a dynamic array.
+
+
+
+class DynaimcArray
+{
+ private:
+
+	int sizeof;
+	int *Data; // dynamic array. 
+	int NextIndex;
+	int TotalSize;
+
+public:
+DynaimcArray()
+{ 
+	Data = new int[5];
+	NextIndex = 0;
+	TotalSize = 5; 
+}
+
+
+AddElement(int element)
+{
+	if(NextIndex==TotalSize)
+	{
+	 int *newdata = new int[2*TotalSize];
+	for(int i{0}; i<TotalSize; i++)
+	{
+		newdata[i] = Data[i];
+	}
+	delete [] Data;
+	Data= newData;
+	TotalSize = Total *2;
+	
+	Data[NextIndex] = element; 
+	NextIndex++; 
+	}
+   }
+
+}; // end of class def
