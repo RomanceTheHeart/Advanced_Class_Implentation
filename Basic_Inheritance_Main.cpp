@@ -14,7 +14,7 @@ int main()
 	Student Student_1(Name_1, Age, RollNumber);
 	Student Student_2;
 	Student Student_3;
-	cin >> Student_1.GetName();
+	
 	cout << "\nStudents: \n";
 	Student_1.DisplayInfo();
 	cout << endl;
